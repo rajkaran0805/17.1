@@ -1,0 +1,19 @@
+age=16:27
+height=c(61.1,61.2,61.8,62.8,63.5,76.1,77,78.1,78.2,78.8,79.7,79.9) 
+data.frame(age,height)
+l1=length(age)                                                    #1
+l2=length(height)
+paste("Elements in age is",l1)
+paste("Elements in height is",l2)
+if(l1==l2)
+  paste("Same no. of elements")
+if(l1!=l2)
+  paste("Not same number of elements")
+
+plot(age,height,main="Age vs Height")        			  #2
+
+z=lm(age~height)                                                  #3
+z
+
+summary(z)                                                        #4
+ 
